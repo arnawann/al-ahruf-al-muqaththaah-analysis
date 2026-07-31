@@ -30,6 +30,6 @@ axes[1,1].set_title('Letter Count')
 
 plt.tight_layout()
 
-plt.savefig('visualization/summary_dashboard.png')
+plt.savefig('visualization/summary_dashboard.png', dpi=300, bbox_inches="tight")
 
 plt.show()
