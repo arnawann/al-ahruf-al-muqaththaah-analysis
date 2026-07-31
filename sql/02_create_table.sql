@@ -1,6 +1,7 @@
 CREATE TABLE muqaththaah (
+    Record_ID INT AUTO_INCREMENT PRIMARY KEY,
     Surah_Number INT,
-    Surah_Name VARCHAR,
+    Surah_Name VARCHAR(50),
     Verse_Number INT,
     Muqaththaah VARCHAR(20),
     Pattern VARCHAR(20),
