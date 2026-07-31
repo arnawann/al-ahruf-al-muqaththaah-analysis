@@ -1,3 +1,8 @@
+## ==========================================
+## AL-AHRUF AL-MUQATHTHAAH ANALYSIS
+## Connect Mysql
+## ==========================================
+
 import mysql.connector
 
 connection = mysql.connector.connect(

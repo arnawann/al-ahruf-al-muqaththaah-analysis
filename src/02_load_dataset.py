@@ -1,3 +1,8 @@
+## ==========================================
+## AL-AHRUF AL-MUQATHTHAAH ANALYSIS
+## Load Dataset
+## ==========================================
+
 import mysql.connector
 import pandas as pd
 
