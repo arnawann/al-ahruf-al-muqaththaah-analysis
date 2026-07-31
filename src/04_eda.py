@@ -92,6 +92,7 @@ print(
 # SECTION 8
 # MECCAN - TWO LETTERS
 # ==========================================
+
 print("\n===== MECCAN - TWO LETTERS =====")
 
 meccan_two_letters = df[
