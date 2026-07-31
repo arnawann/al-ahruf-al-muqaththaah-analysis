@@ -3,29 +3,20 @@
 # Visualization
 # ==========================================
 
-import mysql.connector
-import pandas as pd
 import matplotlib.pyplot as plt
+import os
 
-connection = mysql.connector.connect(
-    host="localhost",
-    user="root",
-    password="arnawan1",
-    database="al_ahruf_analysis"
-)
+from database import load_data
 
-query = """
-SELECT *
-FROM muqaththaah;
-"""
+df = load_data()
 
-df = pd.read_sql(query, connection)
-
-connection.close()
+# ==========================================
+# DISTRIBUTION OF MUQATHTHAAH PATTERNS
+# ==========================================
 
 # ==========================================
 # SECTION 1
-# DISTRIBUTION OF MUQATHTHAAH PATTERNS
+# Pattern Distribution
 # ==========================================
 
 pattern_counts = df['Pattern'].value_counts()
@@ -42,4 +33,74 @@ plt.ylabel('Frequency')
 
 plt.tight_layout()
 
+plt.savefig("visualization/pattern_distribution.png")
+
 plt.show()
+
+
+# ==========================================
+# SECTION 2
+# Revelation Period
+# ==========================================
+
+revelation = df["Revelation_Period"].value_counts()
+
+plt.figure(figsize=(6,5))
+
+revelation.plot(kind='bar')
+
+plt.title('Revelation Period')
+
+plt.xlabel('Period')
+
+plt.ylabel('Number of Surahs')
+
+plt.tight_layout()
+
+plt.savefig('visualization/revelation_period.png')
+
+plt.show()
+
+# ==========================================
+# SECTION 3
+# Interpretation Category
+# ==========================================
+
+category = df['Interpretation_Category'].value_counts()
+
+plt.figure(figsize=(8,5))
+
+category.plot(kind='bar')
+
+plt.title('Interpretation Categories')
+
+plt.xlabel('Category')
+
+plt.ylabel('Frequency')
+
+plt.tight_layout()
+
+plt.savefig('visualization/interpretation_category.png')
+
+plt.show()
+
+# ==========================================
+# SECTION 4
+# Letter Count Distribution
+# ==========================================
+
+plt.figure(figsize=(7,5))
+
+plt.hist(df["Letter_Count"], bins=5)
+
+plt.title('Distribution of Letter Count')
+
+plt.xlabel('Letter Count')
+
+plt.ylabel('Frequency')
+
+plt.tight_layout()
+
+plt.savefig('visualization/letter_count_distribution.png')
+
+plt.close()
