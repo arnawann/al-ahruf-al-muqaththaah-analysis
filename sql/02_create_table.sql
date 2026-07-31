@@ -1,3 +1,8 @@
+-- ==========================================
+-- AL-AHRUF AL-MUQATHTHAAH ANALYSIS
+-- Create Table
+-- ==========================================
+
 CREATE TABLE muqaththaah (
     Record_ID INT AUTO_INCREMENT PRIMARY KEY,
     Surah_Number INT,

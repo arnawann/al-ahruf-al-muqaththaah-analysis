@@ -1,17 +1,31 @@
+-- ==========================================
+-- AL-AHRUF AL-MUQATHTHAAH ANALYSIS
+-- Exploratory Data Analysis (EDA)
+-- Author : Arnawan Dwi Nugraha
+-- ==========================================
+
 USE al_ahruf_analysis;
 
-#How many surahs are there?
+-- ==========================================
+-- SECTION 1
+-- Dataset Overview
+-- ==========================================
+
+-- Total Number of Surahs
+
+-- Distribution by Revelation Period
+
+-- Distribution of Muqaththaah Patterns
+
 SELECT COUNT(*) AS Total_Surahs
 FROM muqaththaah;
 
-#How many Meccan and Madinan surahs are there?
 SELECT
     Revelation_Period,
     COUNT(*) AS Total
 FROM muqaththaah    
 GROUP BY Revelation_Period;
 
-#The most common Muqaththaah pattern
 SELECT
     Pattern,
     COUNT(*) AS Total
@@ -19,12 +33,24 @@ FROM muqaththaah
 GROUP BY Pattern
 ORDER BY Total DESC;
 
-#Average number of letters
+-- ==========================================
+-- SECTION 2
+-- Statistical Summary
+-- ==========================================
+
+-- Average Number of Muqaththaah Letters
+
 SELECT
     AVG(Letter_Count) AS Average_Letters
 FROM muqaththaah;
 
-#The number of entries in each category of exegesis
+-- ==========================================
+-- SECTION 3
+-- Category Analysis
+-- ==========================================
+
+-- Distribution of Interpretation Categories
+
 SELECT
     Interpretation_Category,
     COUNT(*) AS Total
@@ -32,21 +58,29 @@ FROM muqaththaah
 GROUP BY Interpretation_Category
 ORDER BY Total DESC;
 
-#A Surah that has five letters
+-- ==========================================
+-- SECTION 4
+-- Filtering Queries
+-- ==========================================
+
+-- Surahs with Five-Letter Muqaththaah
+
+-- Madinan Surahs with Muqaththaah
+
+-- Meccan Surahs with Two-Letter Muqaththaah
+
 SELECT
     Surah_Name,
     Muqaththaah
 FROM muqaththaah
 WHERE Letter_Count = 5;
 
-#Just the Madani Surah
 SELECT
     Surah_Name,
     Muqaththaah
 FROM muqaththaah
 WHERE Revelation_Period = 'Madinan';
 
-#A Meccan surah that uses two letters
 SELECT
     Surah_Name,
     Muqaththaah
@@ -54,7 +88,11 @@ FROM muqaththaah
 WHERE Revelation_Period = 'Meccan'
 AND Letter_Count = 2;
 
-#Mini Project - Muqaththaah Report
+-- ==========================================
+-- FINAL REPORT
+-- Comprehensive Muqaththaah Report
+-- ==========================================
+
 SELECT
     Surah_Name,
     Surah_Number,

@@ -1,3 +1,8 @@
+-- ==========================================
+-- AL-AHRUF AL-MUQATHTHAAH ANALYSIS
+-- Import Data
+-- ==========================================
+
 USE al_ahruf_analysis;
 
 INSERT INTO muqaththaah
