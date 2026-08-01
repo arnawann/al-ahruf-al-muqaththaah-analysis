@@ -9,4 +9,4 @@ Only a small proportion are found in Madinan surahs.
 ## 3. "Only Allah Knows" is the dominant interpretation category.
 
 ## 4. Five-letter Muqaththaah are rare.
-Only a few surahs begin with five-letter combinations
+Only a surah begin with five-letter combinations
