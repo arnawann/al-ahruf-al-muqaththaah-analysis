@@ -1,0 +1,31 @@
+Record_ID,Surah_Number,Surah_Name,Verse_Number,Muqaththaah,Pattern,Letter_Count,Revelation_Period,Interpretation_Category
+1,2,Al-Baqarah,1,الم,Three Letters,3,Madinan,Multiple Interpretations
+2,3,Ali 'Imran,1,الم,Three Letters,3,Madinan,Multiple Interpretations
+3,7,Al-A'raf,1,المص,Four Letters,4,Meccan,Only Allah Knows
+4,10,Yunus,1,الر,Three Letters,3,Meccan,Only Allah Knows
+5,11,Hud,1,الر,Three Letters,3,Meccan,Only Allah Knows
+6,12,Yusuf,1,الر,Three Letters,3,Meccan,Only Allah Knows
+7,13,Ar-Ra'd,1,المر,Four Letters,4,Madinan,Only Allah Knows
+8,14,Ibrahim,1,الر,Three Letters,3,Meccan,Only Allah Knows
+9,15,Al-Hijr,1,الر,Three Letters,3,Meccan,Only Allah Knows
+10,19,Maryam,1,كهيعص,Five Letters,5,Meccan,Only Allah Knows
+11,20,Ta-Ha,1,طه,Two Letters,2,Meccan,Prophet's Name
+12,26,Ash-Shu'ara',1,طسم,Three Letters,3,Meccan,Only Allah Knows
+13,27,An-Naml,1,طس,Two Letters,2,Meccan,Only Allah Knows
+14,28,Al-Qasas,1,طسم,Three Letters,3,Meccan,Only Allah Knows
+15,29,Al-'Ankabut,1,الم,Three Letters,3,Meccan,Only Allah Knows
+16,30,Ar-Rum,1,الم,Three Letters,3,Meccan,Only Allah Knows
+17,31,Luqman,1,الم,Three Letters,3,Meccan,Only Allah Knows
+18,32,As-Sajdah,1,الم,Three Letters,3,Meccan,Only Allah Knows
+19,36,Ya-Sin,1,يس,Two Letters,2,Meccan,Prophet's Name
+20,38,Sad,1,ص,One Letter,1,Meccan,Only Allah Knows
+21,40,Ghafir,1,حم,Two Letters,2,Meccan,Only Allah Knows
+22,41,Fussilat,1,حم,Two Letters,2,Meccan,Only Allah Knows
+23,42,Ash-Shura,1,حم,Two Letters,2,Meccan,Only Allah Knows
+24,42,Ash-Shura,2,عسق,Three Letters,3,Meccan,Only Allah Knows
+25,43,Az-Zukhruf,1,حم,Two Letters,2,Meccan,Only Allah Knows
+26,44,Ad-Dukhan,1,حم,Two Letters,2,Meccan,Only Allah Knows
+27,45,Al-Jathiyah,1,حم,Two Letters,2,Meccan,Only Allah Knows
+28,46,Al-Ahqaf,1,حم,Two Letters,2,Meccan,Only Allah Knows
+29,50,Qaf,1,ق,One Letter,1,Meccan,Only Allah Knows
+30,68,Al-Qalam,1,ن,One Letter,1,Meccan,Only Allah Knows
